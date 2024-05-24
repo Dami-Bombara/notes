@@ -1,0 +1,7 @@
+<h1>Moj zoznam</h1>
+<p><% @items.each do |item| %></p>
+    <%= item.id %>
+    <%= item.title %>
+    <%= item.expected_cost %>
+    <%= item.is_done %>
+  <% end %>
