@@ -1,5 +1,9 @@
 class NotesController < ApplicationController
+  def index
+    @notes = Note.all
+  end
+
   def show
-    @notes = Note.new(title: "Nadpis", body: "Paragraf")
+    @note = Note.find(params[:id])
   end
 end
